@@ -18,6 +18,14 @@ namespace C__Shop_3
         //CONSTRUCTOR
         public Water(string name, string description, float price, string categoryName, string brand, float maxCapacity, float initialLiters, float pH, string source, int tax = 22) : base(name, description, price, categoryName, tax)
         {
+
+            if (pH < 0 || pH > 10)
+            {
+                string exceptionMessage = "I parametri del pH sono errati!";
+                throw new ArgumentException(exceptionMessage);
+            }
+
+
             this.brand = brand;
             this.maxCapacity = maxCapacity;
             this.litersInTheBottle = initialLiters;
