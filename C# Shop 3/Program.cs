@@ -44,9 +44,10 @@ try
 	Console.WriteLine(LavatriceSamsung.ToString());
 
 	Console.WriteLine(AcquaSantAnna.GetLitersInBottle());
-	AcquaSantAnna.Drink(2f);
+	AcquaSantAnna.Drink(0.5f);
 	Console.WriteLine(AcquaSantAnna.GetLitersInBottle());
-	Console.WriteLine(AcquaSantAnna.GetDescription());
+    AcquaSantAnna.Fill(1f);
+    Console.WriteLine(AcquaSantAnna.GetDescription());
 	Console.WriteLine(AcquaSantAnna.ToString());
 
 	Console.WriteLine(Limone.GetOrigin());

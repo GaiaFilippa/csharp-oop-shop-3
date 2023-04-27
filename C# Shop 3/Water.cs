@@ -97,8 +97,9 @@ namespace C__Shop_3
             }
             else
             {
-                Console.WriteLine("Non puoi riempire così tanto");
                 litersInTheBottle = maxCapacity;
+                string exceptionMessage = "Hai finito lo spazio nella bottiglia!";
+                throw new ArgumentException(exceptionMessage);
             }
         }
 
