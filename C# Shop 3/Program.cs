@@ -26,7 +26,7 @@ try
 	Console.WriteLine("I prodotti attualmente generati sono: " + Product.GetTotalGeneratedProducts());
 
 	Product LavatriceSamsung = new Product("Lavatrice Samsung SE4000", "Lavatrice ultra performante in classe A", 999.99f, "elettrodomestico");
-	Water AcquaSantAnna = new Water("Acqua", "Frizzante", 2f, "Alimentari", "Sant'Anna", 2.5f, 2f, 11f, "Vinadio");
+	Water AcquaSantAnna = new Water("Acqua", "Frizzante", 2f, "Alimentari", "Sant'Anna", 2.5f, 2f, 7f, "Vinadio");
 	Fruit Limone = new Fruit("Limone", "Limone grande", 0.5f, "Alimentari", "Sicilia", "Agrume");
 	Fruit Mela1 = new Fruit("Mela verde", "Mela rosso", 0.2f, "mela", "Roma", "frutta");
 	Fruit Mela2 = new Fruit("Mela gialla", "Mela gialla", 0.2f, "mela", "Roma", "frutta");
@@ -44,7 +44,7 @@ try
 	Console.WriteLine(LavatriceSamsung.ToString());
 
 	Console.WriteLine(AcquaSantAnna.GetLitersInBottle());
-	AcquaSantAnna.Drink(0.5f);
+	AcquaSantAnna.Drink(2f);
 	Console.WriteLine(AcquaSantAnna.GetLitersInBottle());
 	Console.WriteLine(AcquaSantAnna.GetDescription());
 	Console.WriteLine(AcquaSantAnna.ToString());

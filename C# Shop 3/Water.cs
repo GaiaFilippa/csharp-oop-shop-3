@@ -78,8 +78,10 @@ namespace C__Shop_3
             }
             else
             {
-                Console.WriteLine("Non puoi bere così tanto");
+
                 litersInTheBottle = 0;
+                string exceptionMessage = "Hai finito l'acqua!";
+                throw new ArgumentException(exceptionMessage);
 
             }
 
